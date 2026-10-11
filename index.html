@@ -1,0 +1,360 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mohamed Tharik Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="loading">
+
+<div id="bg">
+  <div class="l g"></div>
+  <div class="l spot" id="spot"></div>
+  <div class="l glow" id="glow"></div>
+  <div class="l grain"></div>
+</div>
+
+<!-- LOAD TRANSITION -->
+<div class="loader" id="loader">
+  <div class="panel top"></div>
+  <div class="panel bot"></div>
+  <div class="l-inner">
+    <div class="l-name"><span>Mohamed Tharik</span></div>
+    <div class="l-count" id="count">0</div>
+    <div class="l-bar"><i id="bar"></i></div>
+  </div>
+</div>
+
+<!-- NAVIGATION: MT. LOGO REMOVED -->
+<nav>
+  <ul>
+    <li><a href="#top">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#resume">Resume</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="#contact" class="logo">Let's Talk ↗</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="hero-grid">
+    <div class="hero-text">
+      <div class="tag rv">
+        <i></i>Available for Mobile App &amp; Development Opportunities
+      </div>
+
+      <h1>
+        <span class="line"><span>Hi, I'm</span></span>
+        <span class="line"><span>Mohamed</span></span>
+        <span class="line"><span>Tharik.</span></span>
+      </h1>
+
+      <p class="sub rv d2">
+        Flutter &amp; Dart Developer | UI/UX Enthusiast |
+        Building clean, simple and user-friendly digital experiences.
+      </p>
+
+      <div class="btns rv d3">
+        <a class="btn solid" href="#projects">View Projects</a>
+        <a class="btn ghost cv" href="#">Download CV</a>
+        <a class="btn ghost" href="#contact">Get in Touch</a>
+      </div>
+    </div>
+
+    <div class="hero-avatar rv d2">
+      <div class="frame">
+        <div class="ring"></div>
+        <div class="ph" id="face" role="img" aria-label="Photo of Mohamed Tharik">
+          <img class="avatar-photo" src="assets/mohamed-avatar.png" alt="Mohamed Tharik wearing a white hoodie" />
+          <canvas class="avatar-mouth" id="mouthcv" width="1087" height="1447" aria-hidden="true"></canvas>
+        </div>
+        <div class="wave">
+          <i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+        </div>
+      </div>
+
+      <div class="bubble"><span id="say">Tap play to hear about me.</span></div>
+      <button class="play" id="play" type="button">▶ Watch my intro</button>
+      <small id="vn" style="color:#666;font-size:.72rem;text-align:center;min-height:1em"></small>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about">
+  <div class="about-text">
+  <div class="label rv">About</div>
+  <p class="rv">
+    I am a Computer Science undergraduate with a strong interest in
+    mobile application development, UI/UX design and modern software technologies.
+  </p>
+  <p class="rv">
+    I'm pursuing a BSc (Hons) in Computer Science at APIIT. I enjoy turning
+    ideas into simple, practical digital experiences with Flutter and Dart,
+    and designing interfaces that are easy and enjoyable to use.
+  </p>
+  <p class="rv">
+    Through my university projects I've worked with mobile and web development,
+    databases, Firebase, UI/UX design and development tools, and I keep improving
+    my problem-solving skills on the way to a career in mobile and software development.
+  </p>
+  </div>
+  <div class="about-side">
+    <div class="stat rv"><b>BSc</b><span>Computer Science (Hons) at APIIT</span></div>
+    <div class="stat rv"><b>2nd Year</b><span>Undergraduate, started 2024</span></div>
+    <div class="stat rv"><b>2028</b><span>Expected graduation</span></div>
+    <div class="stat rv"><b>Flutter</b><span>Dart, Firebase &amp; REST APIs</span></div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="what">
+  <div class="label rv">What I Do</div>
+  <h2 class="h2 rv">Services</h2>
+
+  <div class="cards">
+    <div class="card rv">
+      <h3>Mobile Application Development</h3>
+      <p>I build mobile apps using Flutter and Dart, focusing on clean interfaces, usability and responsive experiences.</p>
+    </div>
+
+    <div class="card rv">
+      <h3>UI/UX Design</h3>
+      <p>I design simple, user-friendly interfaces using modern UI/UX principles and tools such as Figma.</p>
+    </div>
+
+    <div class="card rv">
+      <h3>Application &amp; Backend Integration</h3>
+      <p>I work with Firebase and REST APIs to connect applications with backend services and data.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="skills-head">
+    <div>
+      <div class="label rv">Skills</div>
+      <h2 class="h2 rv">What I work with</h2>
+    </div>
+  </div>
+
+  <div class="sg rv">
+    <div>
+      <h4>Mobile</h4>
+      <div class="chips"><span>Flutter</span><span>Dart</span><span>Android Studio</span></div>
+    </div>
+    <div>
+      <h4>Programming</h4>
+      <div class="chips"><span>Java</span><span>C#</span><span>Python</span><span>C/C++</span></div>
+    </div>
+    <div>
+      <h4>Web</h4>
+      <div class="chips"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span></div>
+    </div>
+    <div>
+      <h4>Backend &amp; Cloud</h4>
+      <div class="chips"><span>Firebase</span><span>AWS</span><span>REST APIs</span></div>
+    </div>
+    <div>
+      <h4>Database</h4>
+      <div class="chips"><span>MySQL</span></div>
+    </div>
+    <div>
+      <h4>UI/UX</h4>
+      <div class="chips"><span>Figma</span><span>Wireframing</span><span>UI Design</span><span>User Experience</span></div>
+    </div>
+    <div class="wide">
+      <h4>Dev Tools</h4>
+      <div class="chips">
+        <span>Git</span><span>GitHub</span><span>Visual Studio</span>
+        <span>VS Code</span><span>PyCharm</span><span>Arduino IDE</span>
+      </div>
+    </div>
+  </div>
+  <div class="chips big center rv">
+    <span>Flutter</span><span>Dart</span><span>UI/UX Design</span>
+    <span>Firebase</span><span>REST APIs</span><span>Git</span>
+    <span>Figma</span><span>Canva</span><span>Supabase</span><span>Vercel</span>
+  </div>
+</section>
+
+<!-- SELECTED WORK -->
+<section id="projects">
+  <div class="label rv">Projects</div>
+  <h2 class="h2 rv">Selected work</h2>
+
+  <!-- CAKE HEAVEN -->
+  <details class="p rv">
+    <summary class="proj">
+      <div>
+        <h3>Cake Heaven</h3>
+        <small>Flutter · Dart · Firebase · UI/UX</small>
+      </div>
+      <span class="tags"><i>Flutter</i><i>Dart</i><i>Firebase</i><i>UI/UX</i></span>
+      <span class="arr">→</span>
+    </summary>
+
+    <div class="pb">
+      <p>
+        A mobile cake-ordering app with user authentication, cake browsing,
+        categories, details, a shopping cart and an About section, focused
+        on a clean, attractive experience.
+      </p>
+
+      <span class="tech">
+        Features: login &amp; registration · Firebase auth · forgot password ·
+        categories · search · sizes &amp; prices · cart · profile ·
+        dark/light theme · responsive UI
+      </span>
+
+      <a class="project-more-link" href="cake-heaven.html">
+        More about this project <span aria-hidden="true">↗</span>
+      </a>
+    </div>
+  </details>
+
+  <!-- NUTRICO -->
+  <details class="p rv">
+    <summary class="proj">
+      <div>
+        <h3>NutriCo</h3>
+        <small>HTML · CSS · Web Technologies</small>
+      </div>
+      <span class="tags"><i>HTML</i><i>CSS</i><i>Web Technologies</i></span>
+      <span class="arr">→</span>
+    </summary>
+
+    <div class="pb">
+      <p>
+        A nutrition-focused academic website presenting nutrition information
+        through a structured, user-friendly interface.
+      </p>
+
+      <span class="tech">
+        Focus: web development · UI design · responsive layout
+      </span>
+
+      <a class="project-more-link" href="nutrico.html">
+        More about this project <span aria-hidden="true">↗</span>
+      </a>
+    </div>
+  </details>
+
+  <!-- SECURE INDUSTRIAL LOADING GATE -->
+  <details class="p rv">
+    <summary class="proj">
+      <div>
+        <h3>Secure Industrial Loading Gate</h3>
+        <small>ESP32 · Arduino · C/C++ · IoT</small>
+      </div>
+      <span class="tags"><i>ESP32</i><i>Arduino</i><i>C/C++</i><i>IoT</i></span>
+      <span class="arr">→</span>
+    </summary>
+
+    <div class="pb">
+      <p>
+        An IoT/embedded prototype using an ESP32 with sensors and actuators
+        to monitor and control an industrial loading gate.
+      </p>
+
+      <span class="tech">
+        Parts: ESP32 · HC-SR04 · PIR sensor · potentiometer · servo · buzzer ·
+        OLED · push button · Arduino IDE · Wokwi<br>
+        Focus: sensor integration · hardware control · safety logic ·
+        automated gate control
+      </span>
+
+      <a class="project-more-link" href="secure-loading-gate.html">
+        More about this project <span aria-hidden="true">↗</span>
+      </a>
+    </div>
+  </details>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <div class="label rv">Education</div>
+  <h2 class="h2 rv">Background</h2>
+  <div class="two">
+  <div class="col">
+
+  <div class="edu rv">
+    <b>APIIT · BSc (Hons) Computer Science</b>
+    <p>Undergraduate · 2nd year · Started 2024 · Expected graduation 2028</p>
+  </div>
+
+  <div class="edu rv">
+    <b>APIIT Foundation · Foundation Certificate</b>
+    <p>Completed 21 February 2025</p>
+  </div>
+
+  </div>
+  <div class="col">
+  <div class="label rv">Career Goal</div>
+  <p class="sec-p rv">
+    I want to build a career in mobile application development and software
+    engineering, growing through academic projects, personal projects and
+    real-world opportunities.
+  </p>
+
+  <div class="label rv">Currently Developing</div>
+  <div class="chips rv">
+    <span>Flutter apps</span><span>Dart</span><span>UI/UX</span>
+    <span>Firebase</span><span>REST APIs</span><span>Git &amp; GitHub</span>
+    <span>Responsive design</span><span>Supabase</span><span>Vercel</span>
+  </div>
+  </div>
+  </div>
+</section>
+
+<!-- RESUME -->
+<section id="resume" class="resume">
+  <div class="label rv">Resume</div>
+  <div class="resume-row">
+    <h2 class="h2 rv">My CV</h2>
+    <a class="btn solid rv cv" href="#">Download CV ↓</a>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <div class="c-left">
+  <div class="label rv">Contact</div>
+  <h2 class="h2 rv">Let's build something.</h2>
+
+  <p class="t rv">
+    Have an idea for a mobile application or would like to connect?
+    I'm open to discussing mobile development, UI/UX, academic projects
+    and future opportunities.
+  </p>
+  </div>
+  <div class="c-right">
+
+  <a class="mail rv" href="mailto:m.irshadtharik@gmail.com">
+    m.irshadtharik@gmail.com
+  </a>
+
+  <div class="links rv">
+    <a class="btn ghost" href="tel:0759623723">Call 075 962 3723</a>
+    <a class="btn ghost" href="https://github.com/Irshad-Tharik" target="_blank" rel="noopener">GitHub ↗</a>
+    <a class="btn ghost" href="https://www.linkedin.com/in/mohamed-tharik-a2761043a" target="_blank" rel="noopener">LinkedIn ↗</a>
+  </div>
+  </div>
+</section>
+
+<footer>
+  <span>© 2026 Mohamed Tharik</span>
+  <a href="#top">Back to top ↑</a>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
