@@ -1,5 +1,32 @@
 
 (function () {
+
+  // Accessible mobile navigation: open/close, close after selection, Escape support.
+  var navToggle = document.querySelector('.nav-toggle');
+  var primaryNav = document.getElementById('primary-navigation');
+  if (navToggle && primaryNav) {
+    function closeNav() {
+      navToggle.setAttribute('aria-expanded', 'false');
+      navToggle.setAttribute('aria-label', 'Open navigation menu');
+      primaryNav.classList.remove('is-open');
+    }
+    navToggle.addEventListener('click', function () {
+      var open = navToggle.getAttribute('aria-expanded') !== 'true';
+      navToggle.setAttribute('aria-expanded', String(open));
+      navToggle.setAttribute('aria-label', open ? 'Close navigation menu' : 'Open navigation menu');
+      primaryNav.classList.toggle('is-open', open);
+    });
+    primaryNav.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', closeNav);
+    });
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape') closeNav();
+    });
+    window.addEventListener('resize', function () {
+      if (window.innerWidth > 700) closeNav();
+    });
+  }
+
   var loader = document.getElementById('loader');
   var count = document.getElementById('count');
   var bar = document.getElementById('bar');
